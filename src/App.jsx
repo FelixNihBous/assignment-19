@@ -1,10 +1,19 @@
 import React from 'react';
-import Parent from './Parent';
+import ExampleComponent from './Example';
 
 const App = () => {
+    const props = {
+        strProp: "Hello, World!",
+        numProp: 42,
+        boolProp: true,
+        arrProp: ['Apple', 'Banana', 'Cherry'],
+        objProp: { key1: 'Value1', key2: 'Value2' }
+    };
+
     return (
         <div>
-            <Parent />
+            {/* Using the spread operator to pass all props */}
+            <ExampleComponent {...props} />
         </div>
     );
 };

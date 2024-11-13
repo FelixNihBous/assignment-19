@@ -2,10 +2,11 @@ import React from 'react';
 import ProductList from './ProductList';
 
 const App = () => {
+    // Sample product array
     const products = [
-        { name: 'Real 1', price: 149.00 },
-        { name: 'Fake 2', price: 151.00 },
-        { name: 'Fake 3', price: 152.00 },
+        { name: 'Product 1', inStock: true },
+        { name: 'Product 2', inStock: false },
+        { name: 'Product 3', inStock: true },
     ];
 
     return (

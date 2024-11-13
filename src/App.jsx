@@ -1,19 +1,17 @@
 import React from 'react';
-import ExampleComponent from './Example';
+import ProductList from './ProductList';
 
 const App = () => {
-    const props = {
-        strProp: "Hello, World!",
-        numProp: 42,
-        boolProp: true,
-        arrProp: ['Apple', 'Banana', 'Cherry'],
-        objProp: { key1: 'Value1', key2: 'Value2' }
-    };
+    const products = [
+        { name: 'Real 1', price: 149.00 },
+        { name: 'Fake 2', price: 151.00 },
+        { name: 'Fake 3', price: 152.00 },
+    ];
 
     return (
         <div>
-            {/* Using the spread operator to pass all props */}
-            <ExampleComponent {...props} />
+            <h1>Product List</h1>
+            <ProductList products={products} />
         </div>
     );
 };

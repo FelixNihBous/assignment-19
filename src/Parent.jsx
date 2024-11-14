@@ -1,17 +1,21 @@
 import React from 'react';
-import Child from './Child';
+import Button from './Child';
 
-const ParentComponent = () => {
-    const name = "Alice";
-    const age = 25;
+const App = () => {
+    // Define the function in the parent component
+    const handleClick = () => {
+        alert('Button clicked!');
+    };
+
+    const props = {
+        onClick: handleClick,
+    };
 
     return (
         <div>
-            <h1>Parent Component</h1>
-            {/* Passing props to ChildComponent */}
-            <Child name={name} age={age} />
+            <Button {...props} />
         </div>
     );
 };
 
-export default ParentComponent;
+export default App;

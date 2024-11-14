@@ -3,9 +3,9 @@ import ProductList from './ProductList';
 
 const App = () => {
     const products = [
-        { name: 'Real 1', price: 149.00 },
-        { name: 'Fake 2', price: 151.00 },
-        { name: 'Fake 3', price: 152.00 },
+        { name: 'Real 1', price: 149 },
+        { name: 'Fake 2', price: 151 },
+        { name: 'Fake 3', price: 152 },
     ];
 
     return (
